@@ -1,0 +1,32 @@
+<%= form_with(model: cuestionario, local: true) do |form| %>
+  <% if cuestionario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cuestionario.errors.count, "error") %> prohibited this cuestionario from being saved:</h2>
+
+      <ul>
+      <% cuestionario.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :fecha %>
+    <%= form.date_select :fecha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hora %>
+    <%= form.time_select :hora %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pregunta %>
+    <%= form.text_area :pregunta %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

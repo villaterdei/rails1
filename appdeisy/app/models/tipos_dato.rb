@@ -1,0 +1,2 @@
+class TiposDato < ApplicationRecord
+end

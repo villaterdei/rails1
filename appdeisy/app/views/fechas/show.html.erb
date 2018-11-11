@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @fecha.date %>
+</p>
+
+<p>
+  <strong>Hora:</strong>
+  <%= @fecha.Hora %>
+</p>
+
+<p>
+  <strong>Pregunta:</strong>
+  <%= @fecha.Pregunta %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @fecha.text %>
+</p>
+
+<%= link_to 'Edit', edit_fecha_path(@fecha) %> |
+<%= link_to 'Back', fechas_path %>

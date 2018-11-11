@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha: 2018-11-10
+  hora: 2018-11-10 16:55:53
+  pregunta: MyText
+
+two:
+  fecha: 2018-11-10
+  hora: 2018-11-10 16:55:53
+  pregunta: MyText

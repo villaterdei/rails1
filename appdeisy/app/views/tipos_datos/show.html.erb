@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @tipos_dato.date %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @tipos_dato.time %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @tipos_dato.text %>
+</p>
+
+<%= link_to 'Edit', edit_tipos_dato_path(@tipos_dato) %> |
+<%= link_to 'Back', tipos_datos_path %>
